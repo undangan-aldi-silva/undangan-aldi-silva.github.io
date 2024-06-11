@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-                <h1 class="font-esthetic my-4" style="font-size: 3rem;">Wahyu & Riski</h1>
+                <h1 class="font-esthetic my-4" style="font-size: 3rem;">Aldi & Silva</h1>
                 <p class="mb-0" style="font-size: 1.5rem;">Rabu, 15 Maret 2023</p>
 
                 <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Wahyu%20and%20Riski&details=The%20Wedding%20of%20Wahyu%20and%20Riski%20%7C%2015%20Maret%202023%20%7C%20RT%2010%20RW%2002,%20Desa%20Pajerukan,%20Kec.%20Kalibagor,%20Kab.%20Banyumas,%20Jawa%20Tengah%2053191%20%7C%2010.00%20-%2011.00%20WIB&dates=20230315T100000/20230315T110000&location=https://goo.gl/maps/ALZR6FJZU3kxVwN86">
@@ -322,7 +322,7 @@
                     </div>
 
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://maps.app.goo.gl/LAYvsjDC1fwJXbw98/" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                        <a href="https://maps.app.goo.gl/yWQAdHdVrJ9e3RTa7/" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
                             <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
                         </a>
                         <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
@@ -419,7 +419,7 @@
         </svg>
 
         <!-- Love Gift -->
-        <!-- <div class="container">
+        <div class="container">
             <div class="pb-2">
 
                 <div class="text-center">
@@ -434,7 +434,7 @@
                     <div class="overflow-x-hidden">
                         <div class="row justify-content-center">
 
-                            <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-down" data-aos-duration="1500">
+                            <!-- <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-down" data-aos-duration="1500">
                                 <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png" class="img-fluid w-50 rounded" alt="bni">
 
                                 <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
@@ -442,21 +442,23 @@
 
                             
                                 <button class="btn btn-outline-dark btn-sm rounded-3" data-copy="123456789" onclick="util.copy(this, 'Tersalin')" autofocus>Salin No. Rekening</button>
-                            </div>
+                            </div> -->
 
                             <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-down" data-aos-duration="1500">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/640px-BANK_BRI_logo.svg.png" class="img-fluid w-50 rounded" alt="bri">
 
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
-                                <p class="card-text" style="font-size: 0.9rem;">a.n Lorem ipsum dolor</p>
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 7580 0101 8631 535</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Silva Norani</p>
 
-                                <button class="btn btn-outline-dark btn-sm rounded-3" data-copy="123456789" onclick="util.copy(this, 'Tersalin')" autofocus>Salin No. Rekening</button>
+                                <button class="btn btn-outline-dark btn-sm rounded-3" data-copy="758001018631535" onclick="copyText()" autofocus>Salin No. Rekening</button>
+                                <textarea id="textToCopy" class="hidden-textarea">758001018631535</textarea>
+                                <!-- onclick="util.copy(this, 'Tersalin')" -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Comments -->
         <section class="m-0 px-0 pb-0 pt-3" id="ucapan">
@@ -619,6 +621,16 @@
     </div>
 
     <!-- Dependencies JS -->
+     <script>
+        function copyText() {
+            const textArea = document.getElementById('textToCopy');
+            textArea.style.display = 'block';  // Make it visible temporarily
+            textArea.select();
+            document.execCommand('copy');
+            textArea.style.display = 'none';  // Hide it again
+            alert('Text copied to clipboard!');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js" integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous"></script>
